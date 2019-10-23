@@ -1,0 +1,192 @@
+---
+- 
+  id: 1
+  type: U
+  title: Contact informatie
+  flags: 1
+  fields:
+    - 
+      type: text
+      name: email
+      label: E-mailadres
+      sort: 1
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+        validator: email
+    - 
+      type: text
+      name: name
+      label: Volledige naam
+      sort: 2
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: phone
+      name: phone
+      label: Telefoonnummer
+      sort: 3
+      flags: 13057
+    - 
+      type: memo
+      name: notes
+      label: Interne notities
+      sort: 4
+      flags: 12289
+      configuration:
+        rows: 4
+        cols: 40
+- 
+  id: 2
+  type: T #notrans
+  title: Ticket details
+  instructions: Beschrijf uw probleem of vraag
+  notes: |
+    Dit formulier zal aan elk ticket worden gekoppeld, ongeacht de bron. U kunt willekeurige velden toevoegen aan dit formulier en deze zullen voor alle tickets beschikbaar zijn en worden ook doorzoekbaar met geavanceerd zoeken en d.m.v. filters.
+  flags: 1
+  fields:
+    - 
+      id: 20
+      type: tekst #notrans
+      name: onderwerp #notrans
+      label: Samenvatting van het probleem of de vraag
+      sort: 1
+      flags: 489249
+      configuration:
+        size: 40
+        length: 50
+    - 
+      id: 21
+      type: onderwerp #notrans
+      name: bericht #notrans
+      label: Probleem omschrijving
+      hint: Details over de reden(en) voor het openen van het ticket.
+      sort: 2
+      flags: 480547
+    - 
+      id: 22
+      type: prioriteit #notrans
+      name: prioriteit #notrans
+      label: Prioriteitsniveau
+      flags: 274609
+      sort: 3
+- 
+  type: C #notrans
+  title: Bedrijfsgegevens
+  instructions: Details beschikbaar in e-mailsjablonen
+  flags: 1
+  fields:
+    - 
+      type: text #notrans
+      name: veldnaam #notrans
+      label: Bedrijfsnaam
+      sort: 1
+      flags: 291233
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: text #notrans
+      name: website #notrans
+      label: Website
+      sort: 2
+      flags: 12545
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: phone #notrans
+      name: phone #notrans
+      label: Telefoonnummer
+      sort: 3
+      flags: 12545
+      configuration:
+        ext: false
+    - 
+      type: memo #notrans
+      name: address
+      label: Adres
+      sort: 4
+      flags: 12545
+      configuration:
+        rows: 2
+        cols: 40
+        html: false
+        length: 100
+- 
+  type: O #notrans
+  title: Informatie over de organisatie
+  instructions: Gegevens over de gebruikersorganisatie
+  flags: 1
+  fields:
+    - 
+      type: text #notrans
+      name: name #notrans
+      label: Naam
+      sort: 1
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: memo
+      name: address
+      label: Adres
+      sort: 2
+      flags: 13057
+      configuration:
+        rows: 2
+        cols: 40
+        length: 100
+        html: false
+    - 
+      type: phone
+      name: phone
+      label: Telefoon
+      sort: 3
+      flags: 13057
+    - 
+      type: text
+      name: website
+      label: Website
+      sort: 4
+      flags: 13057
+      configuration:
+        size: 40
+        length: 1
+    - 
+      type: memo #notrans
+      name: notes
+      label: Interne notities
+      sort: 5
+      flags: 12289
+      configuration:
+        rows: 4
+        cols: 40
+- 
+  type: A #notrans
+  title: Details Taak
+  instructions: Gelieve het probleem te omschrijven
+  notes: |
+    Dit formulier wordt gebruikt om een taak te creëren.
+  flags: 1
+  fields:
+    - 
+      type: text #notrans
+      name: titel #notrans
+      flags: 290977
+      sort: 1
+      label: Titel
+      configuration:
+        size: 40
+        length: 50
+    - 
+      type: thread #notrans
+      name: description #notrans
+      flags: 282867
+      sort: 2
+      label: Beschrijving
+      hint: Details van de reden(en) om een taak te creëren.

@@ -1,0 +1,33 @@
+---
+- 
+  id: 1
+  role_id: 1
+  flags: 1
+  name: Leeuwentemmers
+  notes: Functioneel beheerders. Deze mensen hebben (aanvankelijk) volledige controle over alle afdelingen waar ze toegang tot hebben.
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  id: 2
+  role_id: 2
+  flags: 1
+  name: Olifant wandelaars
+  notes: |
+    Hoge Pieten
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  id: 3
+  role_id: 2
+  flags: 1
+  name: Vlo Trainers
+  notes: |
+    Lagere medewerkers
+  depts:
+    - 1
+    - 2
+    - 3

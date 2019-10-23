@@ -1,0 +1,23 @@
+---
+#Email template: task.activity.notice.yaml
+#Notice sent to collaborators on task activity e.g reply or message
+#---
+notes: |
+  Kennisgeving die naar medewerkers gestuurd wordt bij taakactiviteit, bijv. een reactie of bericht.
+subject: |
+  Re: %{task.title} [#%{task.number}]
+body: |
+  <h3><strong>Beste %{recipient.name.first},</strong></h3>
+  <div>
+  <em>%{poster.name}</em> heeft zojuist een bericht toegevoegd aan de taak waaraan u deelneemt.
+  </div>
+  <br>
+  %{message}
+  <br>
+  <br>
+  <hr>
+  <div style="color: rgb(127, 127, 127); font-size: small; text-align: center;">
+  <em>U krijgt deze mail omdat u een medewerker bent van taak
+  #%{task.number}. Om deel te nemen hoeft u enkel op deze mail te reageren.</em>
+  </div> #%{task.number}. To participate, simply reply to this email.</em>
+</div>
